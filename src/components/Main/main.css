@@ -1,0 +1,62 @@
+/* Main geral */
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-header);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Apresentacao / Inicio */
+
+.main .mainApresentacao {
+  width: 100%;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: url(/src/assets/image-projeto/main-imagens/apresentacao.png)
+    center/cover no-repeat;
+  padding: 0 3rem;
+  backdrop-filter: blur(4px) saturate(150%);
+  position: relative;
+}
+
+.main .mainApresentacao::before {
+  content: "";
+  position: absolute;
+  backdrop-filter: blur(3px);
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main .mainApresentacao .tituloPrincipal {
+  font-size: 5rem;
+  margin: 2rem 3rem 0;
+}
+
+.main .mainApresentacao .apresentacaoLinha {
+  content: "";
+  border: solid 1px white;
+  width: 15rem;
+  height: 2px;
+  align-self: start;
+  margin: 1rem 0 0 3rem;
+}
+
+.main .mainApresentacao .textoPadrao {
+  font-size: 1.5rem;
+  margin: 3rem 3rem;
+  color: white;
+  width: 55rem;
+}
+
+.main .mainApresentacao .tituloPrincipal,
+.main .mainApresentacao .apresentacaoLinha,
+.main .mainApresentacao .textoPadrao {
+  z-index: 2;
+}

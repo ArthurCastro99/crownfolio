@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  height: 15vh;
+  background-color: var(--color-header);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.header a {
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.header a:hover {
+  scale: 1.05;
+}
+
+.header a img {
+  width: 11rem;
+}
+
+.header .headerMenu .menuLista {
+  display: flex;
+  gap: 2rem;
+}
+
+.header .headerMenu .menuLista .links a {
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease-in;
+}
+
+.header .headerMenu .menuLista .links a:hover {
+  color: var(--color-text-hover);
+  background-color: var(--color-border);
+}

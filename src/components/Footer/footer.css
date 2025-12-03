@@ -1,0 +1,85 @@
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-footer);
+}
+
+/* Secoes */
+
+.footer .footerSecoes {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+
+/* Contatos */
+
+.footer .footerSecoes .contatos h2 {
+  font-size: 2.5rem;
+  margin: 5rem 3rem 0;
+}
+
+.footer .footerSecoes .contatos .listaContato {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+
+.footer .footerSecoes .contatos .listaContato li a {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+/* Redes Sociais */
+
+.footer .footerSecoes .redeSociais {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer .footerSecoes .redeSociais h2 {
+  font-size: 2.5rem;
+  margin: 5rem 3rem 0;
+}
+
+.footer .footerSecoes .redeSociais .listaSocias {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.footer .footerSecoes .redeSociais .listaSocias li a {
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Direitos */
+
+.footer .footerDireitos {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.footer .footerDireitos p {
+  font-size: 1.5rem;
+}
+
+.footer .footerDireitos a {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+}

@@ -1,0 +1,83 @@
+/* Menu */
+
+.main .mainMenu {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-menu);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 7rem;
+}
+
+.main .mainMenu .tituloMenu {
+  font-size: 3rem;
+  width: 100%;
+  margin: 9rem auto 11rem;
+  text-align: center;
+}
+
+.main .mainMenu .menuPratos {
+  height: 100%;
+  margin: 0 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main .mainMenu .menuPratos .imgPratos {
+  border-radius: 2rem;
+  margin: 0 0 3rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px 7px var(--color-border);
+  position: relative;
+}
+.main .mainMenu .menuPratos .imgPratos::before {
+  content: "";
+  position: absolute;
+  backdrop-filter: blur(0.3px);
+  border-radius: 2rem;
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main .mainMenu .menuPratos .imgPratos:hover {
+  scale: calc(1.03);
+  cursor: pointer;
+}
+
+.main .mainMenu .menuPratos .imgPratos img {
+  width: 31rem;
+  height: 31rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.main .mainMenu .menuPratos .infoPrato {
+  position: absolute;
+  left: 1rem;
+  bottom: 2rem;
+  padding: 1rem 0 0 1rem;
+}
+
+.main .mainMenu .menuPratos .infoPrato .tituloPadrao {
+  font-size: 1.5rem;
+}
+
+.main .mainMenu .menuPratos .infoPrato .ingredientePrato {
+  font-size: 1.3rem;
+}
+
+.main .mainMenu .menuPratos .precoPrato {
+  font-size: 2rem;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 2.7rem;
+  color: white;
+}
+
+.main .mainMenu .menuPratos .infoPrato,
+.main .mainMenu .menuPratos .precoPrato {
+  z-index: 2;
+}
