@@ -1,5 +1,5 @@
 import "./menu.css";
-import pratos from "../../data/pratos.json";
+import pratos from "./../../data/pratos.json";
 
 const Menu = () => {
   return (
@@ -10,7 +10,10 @@ const Menu = () => {
         {pratos.map((prato) => (
           <section key={prato.id} className="menuPratos">
             <div className="imgPratos">
-              <img src={prato.imagem} alt={prato.nome} />
+              <img
+                src={`${import.meta.env.BASE_URL} ${prato.imagem}`}
+                alt={prato.nome}
+              />
               <div className="infoPrato">
                 <h2 className="tituloPadrao">{prato.nome}</h2>
                 <p className="ingredientePrato">{prato.ingredientes}</p>

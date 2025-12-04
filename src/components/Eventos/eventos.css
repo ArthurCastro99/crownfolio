@@ -54,7 +54,7 @@
   margin: 3rem 0 0;
   cursor: pointer;
   padding: 1rem;
-  background-color: var(--color-header);
+  background-color: var(--color-menu);
   border-radius: 1rem;
   transition: all 0.3s ease-in;
   color: var(--color-accent);
