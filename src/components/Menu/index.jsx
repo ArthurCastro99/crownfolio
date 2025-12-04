@@ -11,7 +11,7 @@ const Menu = () => {
           <section key={prato.id} className="menuPratos">
             <div className="imgPratos">
               <img
-                src={`${import.meta.env.BASE_URL} ${prato.imagem}`}
+                src={`${import.meta.env.BASE_URL}${prato.imagem}`}
                 alt={prato.nome}
               />
               <div className="infoPrato">
