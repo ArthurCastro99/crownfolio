@@ -35,5 +35,5 @@
 
 .header .headerMenu .menuLista .links a:hover {
   color: var(--color-text-hover);
-  background-color: var(--color-border);
+  background-color: var(--color-menu);
 }

@@ -1,8 +1,7 @@
 /* Evento */
 
 .main .mainEventos {
-  background: url(/public/main-imagens/eventos.png) center 0 /
-    cover no-repeat;
+  background: url(/public/main-imagens/eventos.png) center 0 / cover no-repeat;
   min-height: 50vh;
   display: flex;
   align-items: center;
@@ -62,5 +61,5 @@
 
 .main .mainEventos .secaoEventos button:hover {
   background-color: var(--color-hover);
-  color: var(--color-text-hover);
+  color: var(--color-text);
 }

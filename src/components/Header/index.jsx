@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <header className="header">
         <a href="#">
-          <img src="/src/assets/image-logo/logo.png" alt="Icon logo" />
+          <img src="./src/assets/image-logo/logo.png" alt="Icon logo" />
         </a>
 
         <nav className="headerMenu">
