@@ -18,8 +18,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: url(/src/assets/image-projeto/main-imagens/apresentacao.png)
-    center/cover no-repeat;
+  background: url(/public/main-imagens/apresentacao.png) center/cover no-repeat;
   padding: 0 3rem;
   backdrop-filter: blur(4px) saturate(150%);
   position: relative;

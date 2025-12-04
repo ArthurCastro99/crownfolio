@@ -1,7 +1,7 @@
 /* Evento */
 
 .main .mainEventos {
-  background: url(/src/assets/image-projeto/main-imagens/eventos.png) center 0 /
+  background: url(/public/main-imagens/eventos.png) center 0 /
     cover no-repeat;
   min-height: 50vh;
   display: flex;

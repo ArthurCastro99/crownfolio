@@ -4,41 +4,41 @@
     "nome": "Fettuccine Alfredo",
     "preco": "R$ 35",
     "ingredientes": "Macarrão Fettuccine e bacon",
-    "imagem": "/src/assets/image-projeto/menu-imagens/macarrao-bacon.png"
+    "imagem": "/public/menu-imagens/macarrao-bacon.png"
   },
   {
     "id": 2,
     "nome": "Spaghetti Carbonara",
     "preco": "R$ 45",
     "ingredientes": "Macarrão Spghetti e camarão",
-    "imagem": "/src/assets/image-projeto/menu-imagens/macarrao-camarao.png"
+    "imagem": "/public/menu-imagens/macarrao-camarao.png"
   },
   {
     "id": 3,
     "nome": "Spaghetti Bovina",
     "preco": "R$ 75",
     "ingredientes": "Macarrão Spghetti e carne",
-    "imagem": "/src/assets/image-projeto/menu-imagens/macarrao-godura.png"
+    "imagem": "/public/menu-imagens/macarrao-godura.png"
   },
   {
     "id": 4,
     "nome": "Lasanha Clássica",
     "preco": "R$ 47",
     "ingredientes": "Macarrão Spghetti e molho",
-    "imagem": "/src/assets/image-projeto/menu-imagens/macarrao-molho.png"
+    "imagem": "/public/menu-imagens/macarrao-molho.png"
   },
   {
     "id": 5,
     "nome": "Spghetti Mortadela",
     "preco": "R$ 30",
     "ingredientes": "Macarrão Spghetti e mortadela",
-    "imagem": "/src/assets/image-projeto/menu-imagens/macarrao-mortadela.png"
+    "imagem": "/public/menu-imagens/macarrao-mortadela.png"
   },
   {
     "id": 6,
     "nome": "Spghetti Picadinho",
     "preco": "R$ 55",
     "ingredientes": "Macarrão Spghetti e picadinho",
-    "imagem": "/src/assets/image-projeto/menu-imagens/macarrao-picadinho.png"
+    "imagem": "/public/menu-imagens/macarrao-picadinho.png"
   }
 ]
