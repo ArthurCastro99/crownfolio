@@ -5,7 +5,10 @@ const Header = () => {
     <>
       <header className="header">
         <a href="#">
-          <img src="./src/assets/image-logo/logo.png" alt="Icon logo" />
+          <img
+            src={`${import.meta.env.BASE_URL}image-logo/logo.png`}
+            alt="Logo"
+          />
         </a>
 
         <nav className="headerMenu">
