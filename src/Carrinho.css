@@ -1,0 +1,113 @@
+.carrinhoLateral {
+  background-color: var(--color-menu);
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 35rem;
+  height: 100%;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 101;
+}
+
+.carrinhoLateral.abrir {
+  transform: translateX(0);
+}
+
+.carrinhoLateral.fechar {
+  transform: translateX(100%);
+}
+
+.carrinhoLateral h2 {
+  margin-bottom: 15px;
+  font-size: 3rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.carrinhoLateral li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 2rem;
+}
+
+.carrinhoLateral p {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.carrinhoLateral button {
+  background: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 2.5rem;
+}
+
+.carrinhoLateral button:hover {
+  background: #e5533d;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay.abrir {
+  opacity: 1;
+}
+
+.overlay.fechar {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fecharCarrinho {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+@media (max-width:32rem) {
+    .carrinhoLateral{
+      padding: 2rem;
+      width: 32rem;
+    }
+}

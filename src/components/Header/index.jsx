@@ -1,6 +1,13 @@
 import "./header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Header = () => {
+import { useContext } from "react";
+import { CartContext } from "../../CartContext";
+
+const Header = ({ onToggleCarrinho }) => {
+  const { cart } = useContext(CartContext);
+
+  const totalItens = cart.reduce((acc, item) => acc + item.quantidade, 0);
   return (
     <>
       <header className="header">
@@ -12,10 +19,13 @@ const Header = () => {
         </a>
 
         <nav className="headerMenu">
+          <input type="checkbox" id="menuHamburguer"></input>
+          <label for="menuHamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
           <ul className="menuLista">
-            <li className="links">
-              <a href="#main">Home</a>
-            </li>
             <li className="links">
               <a href="#menu">Menu</a>
             </li>
@@ -27,6 +37,12 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <button className="botaoCarrinho" onClick={onToggleCarrinho}>
+          <FontAwesomeIcon className="carrinhoAdiciona" icon="cart-plus" />
+          <span key={totalItens} className="badge">
+            {totalItens}
+          </span>
+        </button>
       </header>
     </>
   );

@@ -64,7 +64,6 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-
 /* Direitos */
 
 .footer .footerDireitos {
@@ -82,4 +81,22 @@ a {
 .footer .footerDireitos a {
   font-size: 1.5rem;
   margin-left: 0.3rem;
+}
+
+@media (max-width: 32rem) {
+  .footer .footerSecoes {
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer .footerSecoes .contatos .listaContato li {
+    margin:  0 auto;
+  }
+
+  .footer .footerDireitos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+  }
 }

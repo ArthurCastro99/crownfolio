@@ -9,6 +9,7 @@ import {
   faPhoneAlt,
   faPhoneSquare,
   faPhoneVolume,
+  faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
@@ -28,5 +29,6 @@ library.add(
   faMobileAlt,
   faPhoneAlt,
   faPhoneSquare,
-  faPhoneVolume
+  faPhoneVolume,
+  faCartPlus
 );

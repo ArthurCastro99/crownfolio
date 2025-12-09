@@ -1,8 +1,9 @@
 /* Evento */
 
 .main .mainEventos {
-  background: url(/public/main-imagens/eventos.png) center 0 / cover no-repeat;
-  min-height: 50vh;
+  background: url(/public/main-imagens/eventos.png) top / cover no-repeat;
+  width: 100vw;
+  min-height: 43vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,13 +54,26 @@
   margin: 3rem 0 0;
   cursor: pointer;
   padding: 1rem;
-  background-color: var(--color-menu);
+  background-color: var(--color-hover);
   border-radius: 1rem;
   transition: all 0.3s ease-in;
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .main .mainEventos .secaoEventos button:hover {
-  background-color: var(--color-hover);
-  color: var(--color-text);
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+}
+
+@media (max-width: 32rem) {
+  .main .mainEventos .secaoEventos {
+    text-align: center;
+  }
+  .main .mainEventos .secaoEventos .apresentacaoLinha {
+    align-self: center;
+  }
+
+  .main .mainEventos .secaoEventos button {
+    margin: 2.5rem auto 0;
+  }
 }

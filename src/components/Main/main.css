@@ -1,27 +1,23 @@
 /* Main geral */
 
 .main {
-  width: 100%;
-  min-height: 100vh;
+  width: 100vw;
+  height: auto;
   background-color: var(--color-header);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
 }
 
 /* Apresentacao / Inicio */
 
 .main .mainApresentacao {
-  width: 100%;
   min-height: 75vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   background: url(/public/main-imagens/apresentacao.png) center/cover no-repeat;
-  padding: 0 3rem;
   backdrop-filter: blur(4px) saturate(150%);
   position: relative;
+  margin: auto;
 }
 
 .main .mainApresentacao::before {
@@ -51,11 +47,31 @@
   font-size: 1.5rem;
   margin: 3rem 3rem;
   color: white;
-  width: 55rem;
+  width: 80vw;
 }
 
 .main .mainApresentacao .tituloPrincipal,
 .main .mainApresentacao .apresentacaoLinha,
 .main .mainApresentacao .textoPadrao {
   z-index: 2;
+}
+
+@media (max-width: 32rem) {
+  .main {
+    text-align: center;
+  }
+
+  .main .mainApresentacao .tituloPrincipal {
+    font-size: 3rem;
+  }
+
+  .main .mainApresentacao .apresentacaoLinha {
+    width: 9rem;
+    margin: 1rem auto 0;
+  }
+
+  .main .mainApresentacao .textoPadrao {
+    width: 90vw;
+    margin: 2rem auto 0;
+  }
 }

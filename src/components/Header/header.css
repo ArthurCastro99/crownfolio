@@ -1,20 +1,21 @@
 .header {
-  width: 100%;
+  width: 100vw;
   height: 15vh;
   background-color: var(--color-header);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
+  position: relative;
 }
 
 .header a {
   font-size: 3rem;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease;
 }
 
 .header a:hover {
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
 .header a img {
@@ -25,15 +26,200 @@
   display: flex;
   gap: 2rem;
 }
-
+.header .headerMenu input,
+.header .headerMenu label {
+  display: none;
+}
 .header .headerMenu .menuLista .links a {
   font-size: 2rem;
   padding: 1rem 1rem;
   border-radius: 1rem;
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease;
 }
 
 .header .headerMenu .menuLista .links a:hover {
   color: var(--color-text-hover);
-  background-color: var(--color-menu);
+  background-color: var(--color-accent);
+}
+
+.botaoCarrinho {
+  background: none;
+  border: none;
+  font-size: 4rem;
+  cursor: pointer;
+  color: var(--color-accent);
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  right: -1.3rem;
+  background: var(--color-text-hover);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 4px 7px;
+  min-width: 20px;
+  text-align: center;
+  animation: surgirDeBaixo 0.4s ease-out;
+}
+
+.botaoCarrinho:hover {
+  color: var(--color-text-hover);
+  transform: transition 0.3s ease;
+  animation: carrinhoAgitado 0.3s ease-in;
+}
+
+@keyframes carrinhoAgitado {
+  0% {
+    transform: translateX(0rem);
+  }
+
+  25% {
+    transform: translateX(0.5rem);
+  }
+
+  50% {
+    transform: translateX(-0.5rem);
+  }
+
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes surgirDeBaixo {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  60% {
+    transform: translateY(-5px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 32rem) {
+  .header {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .header a img {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .header .headerMenu {
+    margin: 0 1rem 1rem 0;
+  }
+
+  .header .headerMenu .menuLista {
+    display: none;
+    background-color: #fff;
+    text-align: center;
+    width: 13rem;
+    height: 15rem;
+    margin-bottom: -14rem;
+    transition: l 0.5s ease-in;
+  }
+
+  .header .headerMenu .menuLista .links {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+
+  .header .headerMenu .menuLista .links a {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0;
+  }
+  .header .headerMenu .menuLista .links a:hover {
+    background-color: var(--color-accent);
+  }
+
+  .header .headerMenu label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .header .headerMenu label div {
+    display: flex;
+    width: 7rem;
+    height: 6rem;
+    background-color: #fff;
+  }
+
+  .header .headerMenu label div span {
+    background-color: #000000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    left: 2rem;
+    top: 2.9rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  .header .headerMenu label div span::before,
+  .header .headerMenu label div span::after {
+    background-color: #000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+  }
+
+  .header .headerMenu label div span::before {
+    top: -10px;
+  }
+
+  .header .headerMenu label div span::after {
+    bottom: -10px;
+  }
+
+  .header .headerMenu input {
+    display: none;
+  }
+
+  .header .headerMenu input:checked ~ label span {
+    transform: rotate(45deg);
+  }
+
+  .header .headerMenu input:checked ~ label span::before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+
+  .header .headerMenu input:checked ~ label span::after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+
+  .header .headerMenu input:checked ~ ul {
+    display: block;
+  }
+
+  .header .headerMenu input:checked ~ label {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .header .botaoCarrinho {
+    margin-right: 3rem;
+  }
 }
