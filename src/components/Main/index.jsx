@@ -1,6 +1,7 @@
 import "./main.css";
 import Menu from "../Menu/index";
-import Eventos from "../Eventos/index";
+import SobreNos from "../SobreNos/index";
+import Destaques from "../Destaque/index";
 
 const Main = () => {
   return (
@@ -10,13 +11,15 @@ const Main = () => {
           <h1 className="tituloPrincipal">Crownfolio</h1>
           <span className="apresentacaoLinha"></span>
           <p className="textoPadrao">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, odio
-            minus eveniet facere suscipit eaque harum illum a dolor eos quos nam
-            ut recusandae! Magnam nemo quidem vel velit est?
+            Um espaço criado para unir sabor e praticidade. Aqui você encontra
+            pratos preparados com carinho, pensados para transformar cada
+            refeição em uma experiência especial. Explore nosso cardápio,
+            descubra promoções e aproveite a facilidade de pedir
           </p>
         </div>
         <Menu></Menu>
-        <Eventos></Eventos>
+        <SobreNos></SobreNos>
+        <Destaques></Destaques>
       </main>
     </>
   );

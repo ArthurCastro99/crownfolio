@@ -1,0 +1,44 @@
+.promocoes {
+  width: 100vw;
+  padding: 4rem 2rem;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.promocoes h2 {
+  margin: 3rem 0 5rem;
+}
+
+.gridPromocoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1rem;
+}
+
+.cardPromo {
+  background: var(--Color-text);
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.cardPromo img {
+  border-radius: 0.8rem;
+  width: 35rem;
+  height: 35rem;
+}
+
+.cardPromo h3 {
+  color: var(--color-primary);
+}
+
+.cardPromo p {
+  color: var(--color-sucesso);
+}
+
+@media (max-width: 32rem) {
+  .cardPromo img {
+    width: 100%;
+  }
+}

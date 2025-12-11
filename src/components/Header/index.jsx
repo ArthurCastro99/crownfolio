@@ -13,7 +13,7 @@ const Header = ({ onToggleCarrinho }) => {
       <header className="header">
         <a href="#">
           <img
-            src={`${import.meta.env.BASE_URL}image-logo/logo.png`}
+            src={`${import.meta.env.BASE_URL}imageLogo/logo.webp`}
             alt="Logo"
           />
         </a>
@@ -30,7 +30,10 @@ const Header = ({ onToggleCarrinho }) => {
               <a href="#menu">Menu</a>
             </li>
             <li className="links">
-              <a href="#evento">Evento</a>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li className="links">
+              <a href="#promo">Promoção</a>
             </li>
             <li className="links">
               <a href="#contato">Contato</a>

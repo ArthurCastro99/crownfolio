@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: url(/public/main-imagens/apresentacao.png) center/cover no-repeat;
+  background: url(/public/mainImagens/apresentacao.webp) center/cover no-repeat;
   backdrop-filter: blur(4px) saturate(150%);
   position: relative;
   margin: auto;

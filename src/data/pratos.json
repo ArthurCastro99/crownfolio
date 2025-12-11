@@ -4,7 +4,7 @@
     "nome": "Fettuccine Alfredo",
     "preco": 35,
     "ingredientes": "Macarrão Fettuccine e bacon",
-    "imagem": "menu-imagens/macarrao-bacon.png",
+    "imagem": "menuImagens/alfredo.webp",
     "descricao": "Este prato e bonito"
   },
   {
@@ -12,7 +12,7 @@
     "nome": "Spaghetti Carbonara",
     "preco": 45,
     "ingredientes": "Macarrão Spghetti e camarão",
-    "imagem": "menu-imagens/macarrao-camarao.png",
+    "imagem": "menuImagens/carbonara.webp",
     "descricao": "Este prato e bonito"
   },
   {
@@ -20,7 +20,7 @@
     "nome": "Spaghetti Bovina",
     "preco": 75,
     "ingredientes": "Macarrão Spghetti e carne",
-    "imagem": "menu-imagens/macarrao-godura.png",
+    "imagem": "menuImagens/bovina.webp",
     "descricao": "Este prato e bonito"
   },
   {
@@ -28,7 +28,7 @@
     "nome": "Lasanha Clássica",
     "preco": 47,
     "ingredientes": "Macarrão Spghetti e molho",
-    "imagem": "menu-imagens/macarrao-molho.png",
+    "imagem": "menuImagens/classica.webp",
     "descricao": "Este prato e bonito"
   },
   {
@@ -36,7 +36,7 @@
     "nome": "Spghetti Mortadela",
     "preco": 30,
     "ingredientes": "Macarrão Spghetti e mortadela",
-    "imagem": "menu-imagens/macarrao-mortadela.png",
+    "imagem": "menuImagens/mortadela.webp",
     "descricao": "Este prato e bonito"
   },
   {
@@ -44,7 +44,7 @@
     "nome": "Spghetti Picadinho",
     "preco": 55,
     "ingredientes": "Macarrão Spghetti e picadinho",
-    "imagem": "menu-imagens/macarrao-picadinho.png",
+    "imagem": "menuImagens/picadinho.webp",
     "descricao": "Este prato e bonito"
   }
 ]

@@ -1,0 +1,57 @@
+/* Evento */
+
+.sobreNos {
+  background: url(/public/mainImagens/sobreNos.webp) top / cover no-repeat;
+  width: 100vw;
+  min-height: 50dvh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6rem;
+  text-align: center;
+}
+
+.sobreNos::before {
+  content: "";
+  position: absolute;
+  backdrop-filter: blur(0.3px);
+  inset: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sobreNos h2 {
+  font-size: 3rem;
+  margin: -5rem 0 3rem;
+  border-bottom: 0.2rem solid var(--color-text);
+}
+
+.sobreNos p {
+  padding: 0 3rem;
+  font-size: 1.5rem;
+}
+
+.sobreNos h2,
+.sobreNos p {
+  z-index: 2;
+}
+
+@media (max-width: 32rem) {
+  .sobreNos {
+    text-align: center;
+    height: 100dvh;
+  }
+
+  .sobreNos h2 {
+    font-size: 2.5rem;
+    margin: -5rem 0 3rem;
+    border-bottom: 0.2rem solid var(--color-text);
+  }
+
+  .sobreNos p {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+}

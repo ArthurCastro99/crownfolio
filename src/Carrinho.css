@@ -10,6 +10,9 @@
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
   z-index: 101;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .carrinhoLateral.abrir {
@@ -41,18 +44,39 @@
 }
 
 .carrinhoLateral button {
-  background: #ff6347;
-  color: #fff;
+  background: var(--color-primaria);
+  color: white;
   border: none;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
-  font-size: 2.5rem;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+  font-size: 2rem;
 }
 
 .carrinhoLateral button:hover {
   background: #e5533d;
+}
+
+.itemCarrinho {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.itemCarrinho img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.itemCarrinho .info {
+  flex: 1;
 }
 
 .overlay {
@@ -104,10 +128,32 @@
   right: 10px;
 }
 
+.finalizarCompra {
+  background: var(--color-primaria);
+  color: var(--color-text);
+  border: none;
+  padding: 1.2rem 2rem;
+  width: 100%;
+}
 
-@media (max-width:32rem) {
-    .carrinhoLateral{
-      padding: 2rem;
-      width: 32rem;
-    }
+@media (max-width: 32rem) {
+  .carrinhoLateral {
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 48rem) {
+  .carrinhoLateral {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 76.8rem) {
+  .carrinhoLateral {
+    width: 100%;
+    max-width: none;
+  }
 }

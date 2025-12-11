@@ -25,10 +25,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.linkedin.com/in/arthur-castro-b70a02223/"
-                  target="_blank"
-                >
+                <a href="mailto:arthurcastro092012@gmail.com" target="_blank">
                   <FontAwesomeIcon icon="envelope" size="3x" />
                   crownfolio@gmail.com
                 </a>
@@ -68,8 +65,7 @@ const Footer = () => {
         </div>
 
         <div className="footerDireitos">
-          <p>@ 2025 - Todos os direitos reservados -</p>
-          <a href="#">Arthur</a>
+          <p>@ 2025 - Todos os direitos reservados</p>-<a href="#">Arthur</a>
         </div>
       </footer>
     </>
